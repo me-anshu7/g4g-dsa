@@ -10,44 +10,40 @@ To keep the codebase organized, clean, and adhering to [PEP 8](https://peps.pyth
 
 ### 1. Folder Naming (Topics & Modules)
 
-Topic folders follow **`lowercase_snake_case`**, with an optional two-digit numerical prefix to preserve the chronological order of the GeeksforGeeks course syllabus:
+Topic folders follow **`lowercase_snake_case`**, with a two-digit numerical prefix preserving the chronological order of the GeeksforGeeks course syllabus:
 
-* `01_mathematics/`
-* `02_bit_magic/`
-* `03_recursion/`
-* `04_arrays/`
-* `05_searching/`
-* `06_sorting/`
-* `07_matrix/`
-* `08_hashing/`
-* `09_strings/`
-* `10_linked_list/`
-* `11_stack/`
-* `12_queue/`
-* `13_trees/`
-* `14_binary_search_tree/`
-* `15_heap/`
-* `16_graph/`
-* `17_greedy/`
-* `18_backtracking/`
-* `19_dynamic_programming/`
+* `01_analysis_of_algorithms/`
+* `02_mathematics/`
+* `03_bit_magic/`
+* `04_recursion/`
+* `05_arrays/`
+* `06_searching/`
+* `07_sorting/`
+* `08_matrix/`
+* `09_hashing/`
+* `10_strings/`
+* `11_linked_list/`
+* `12_stack/`
+* `13_queue/`
+* `14_trees/`
+* `15_binary_search_tree/`
+* `16_heap/`
+* `17_graph/`
+* `18_greedy/`
+* `19_backtracking/`
+* `20_dynamic_programming/`
 
 ---
 
 ### 2. File Naming Conventions
 
 #### **Python Files (`.py`)**
-* Always use **`snake_case`** (lowercase letters with underscores).
-* Do **not** use hyphens (`-`) or spaces in filenames, as they prevent standard Python imports and violate PEP 8.
-* Examples:
-  * `count_digits.py`
-  * `palindrome_number.py`
-  * `trailing_zeros_in_factorial.py`
-  * `gcd_euclidean.py`
-  * `sieve_of_eratosthenes.py`
-* *(Optional)* If keeping chronological order within a topic:
+* Always use **`lowercase_snake_case`** with a two-digit numerical prefix to maintain chronological order within each topic:
   * `01_count_digits.py`
-  * `02_palindrome_number.py`
+  * `02_absolute_value.py`
+  * `03_convert_celsius_to_fahrenheit.py`
+  * `04_factorial_of_number.py`
+* Do **not** use hyphens (`-`) or spaces in filenames, as they prevent standard Python imports and violate PEP 8.
 
 #### **Documentation & Notes (`.md`)**
 * `README.md` for folder-level notes, problem indexes, or formula reference.
@@ -66,6 +62,7 @@ Description: Count trailing zeros in n! efficiently.
 Time Complexity: O(log5(n))
 Space Complexity: O(1)
 """
+
 
 def count_trailing_zeros(n: int) -> int:
     count = 0
@@ -90,18 +87,22 @@ if __name__ == "__main__":
 ```text
 g4g-dsa/
 ├── README.md
-├── 01_mathematics/
-│   ├── README.md                          # (Optional) Topic notes / formula reference
-│   ├── count_digits.py
-│   ├── palindrome_number.py
-│   ├── trailing_zeros_in_factorial.py
-│   ├── gcd_lcm.py
-│   ├── check_for_prime.py
-│   └── sieve_of_eratosthenes.py
-├── 02_bit_magic/
-│   ├── check_kth_bit_set.py
-│   └── count_set_bits.py
-└── 03_recursion/
-    ├── print_1_to_n.py
-    └── rope_cutting_problem.py
+├── 01_analysis_of_algorithms/
+│   ├── README.md                                # Chapter index / Table of Contents
+│   ├── 01_introduction_to_analysis_of_algorithms.md
+│   ├── 02_asymptotic_analysis.md
+│   └── ...
+├── 02_mathematics/
+│   ├── README.md                                # (Optional) Topic notes / formula reference
+│   ├── 01_count_digits.py
+│   ├── 02_absolute_value.py
+│   ├── 03_convert_celsius_to_fahrenheit.py
+│   ├── 04_factorial_of_number.py
+│   └── ...
+├── 03_bit_magic/
+│   ├── 01_check_kth_bit_set.py
+│   └── 02_count_set_bits.py
+└── 04_recursion/
+    ├── 01_print_1_to_n.py
+    └── 02_rope_cutting_problem.py
 ```
