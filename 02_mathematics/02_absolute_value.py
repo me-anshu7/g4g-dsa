@@ -21,8 +21,8 @@ def absolute_value(n: int) -> int:
 if __name__ == "__main__":
     # Test cases from notes
     print(absolute_value(-32))  # Output: 32
-    print(absolute_value(45))   # Output: 45
-    print(absolute_value(0))    # Output: 0
+    print(absolute_value(45))  # Output: 45
+    print(absolute_value(0))  # Output: 0
 
     # Verifications
     assert absolute_value(-32) == 32

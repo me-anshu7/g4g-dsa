@@ -26,8 +26,8 @@ def count_digits(x: int) -> int:
 if __name__ == "__main__":
     # Test cases from notes
     print(count_digits(9235))  # Output: 4
-    print(count_digits(38))    # Output: 2
-    print(count_digits(7))     # Output: 1
+    print(count_digits(38))  # Output: 2
+    print(count_digits(7))  # Output: 1
 
     # Verifications
     assert count_digits(9235) == 4
