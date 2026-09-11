@@ -42,7 +42,7 @@ Topic folders follow **`lowercase_snake_case`**, with a two-digit numerical pref
   * `01_count_digits.py`
   * `02_absolute_value.py`
   * `03_convert_celsius_to_fahrenheit.py`
-  * `04_factorial_of_number.py`
+  * `04_quadratic_equation_roots.py`
 * Do **not** use hyphens (`-`) or spaces in filenames, as they prevent standard Python imports and violate PEP 8.
 
 #### **Documentation & Notes (`.md`)**
@@ -97,7 +97,7 @@ g4g-dsa/
 │   ├── 01_count_digits.py
 │   ├── 02_absolute_value.py
 │   ├── 03_convert_celsius_to_fahrenheit.py
-│   ├── 04_factorial_of_number.py
+│   ├── 04_quadratic_equation_roots.py
 │   └── ...
 ├── 03_bit_magic/
 │   ├── 01_check_kth_bit_set.py
