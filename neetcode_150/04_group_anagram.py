@@ -19,11 +19,12 @@ def group_anagrams(strs: list[str]) -> list[list[str]]:
         if sorted_key not in grp:
             grp[sorted_key] = []
         grp[sorted_key].append(s)
-    
+
     return list(grp.values())
 
 
 if __name__ == "__main__":
+
     def normalize(groups: list[list[str]]) -> list[list[str]]:
         return sorted([sorted(group) for group in groups]) if groups else []
 
@@ -33,9 +34,9 @@ if __name__ == "__main__":
     print(group_anagrams([""]))
 
     # Verifications
-    assert normalize(group_anagrams(["act", "pots", "tops", "cat", "stop", "hat"])) == normalize(
-        [["hat"], ["act", "cat"], ["stop", "pots", "tops"]]
-    )
+    assert normalize(
+        group_anagrams(["act", "pots", "tops", "cat", "stop", "hat"])
+    ) == normalize([["hat"], ["act", "cat"], ["stop", "pots", "tops"]])
     assert normalize(group_anagrams(["x"])) == normalize([["x"]])
     assert normalize(group_anagrams([""])) == normalize([[""]])
     print("All tests passed!")
